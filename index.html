@@ -44,7 +44,20 @@ vertical-align: middle;
 border-style: none;
 height: 69px;
 }
-    
+    .video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border:0;
+}
   </style>
 </head>
 
@@ -201,7 +214,33 @@ height: 69px;
 
     <!-- ======= Advanced Featuress Section ======= -->
 
+<section id="gallery">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Video</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Video Dokumentasi Kegiatan</p>
+        </div>
+<div class="video-responsive">
+<video controls>
+ <source type="video/mp4" src="https://www.googleapis.com/drive/v3/files/17E2dzFXo4lft4lftS-8DNKG4JvitTt5q?alt=media&key=612895750582-b7poklji1demhu9fb1p3tqkfpnubpic5.apps.googleusercontent.com">
+</video>
+</div>
+        <div class="row no-gutters">
 
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item wow fadeInUp">
+              <a href="assets/img/gallery/gallery-1.jpg" data-gall="portfolioGallery" class="venobox">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+    
     <section id="gallery">
       <div class="container-fluid">
         <div class="section-header">
@@ -275,7 +314,7 @@ height: 69px;
               IMB . Wa => </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="aset" href="https://web.whatsapp.com/send?phone=628567875785">
+            <a class="aset" href="https://wa.me/628567875785">
             <img src="assets/img/logos.svg" style="height: 60px">
             </a>
           </div>
